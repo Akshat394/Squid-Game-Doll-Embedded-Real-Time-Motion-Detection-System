@@ -35,7 +35,7 @@
 flowchart TD
     Start([Power On]) --> Green["Green Light Phase (Head Away, Eyes Green, Play Audio)"]
     Green -->|After Timer| RedTrans["Head Turns (Transition)"]
-    RedTrans --> Red["Red Light Phase\n(Head Faces Player, Eyes Red, Play Audio)"]
+    RedTrans --> Red["Red Light Phase (Head Faces Player, Eyes Red, Play Audio)"]
     Red -->|Motion Detected| Elim["Elimination! (Flash Eyes, Play Sound)"]
     Red -->|No Motion, Timer| Green
     Elim --> Reset["Reset State (Eyes Blue, Wait for Button)"]
