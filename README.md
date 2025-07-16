@@ -33,12 +33,12 @@
 
 ```mermaid
 flowchart TD
-    Start([Power On]) --> Green["Green Light Phase\n (Head Away, Eyes Green, Play Audio)"]
-    Green -->|After Timer| RedTrans["Head Turns\n (Transition)"]
+    Start([Power On]) --> Green["Green Light Phase \n(Head Away, Eyes Green, Play Audio)"]
+    Green -->|After Timer| RedTrans["Head Turns \n(Transition)"]
     RedTrans --> Red["Red Light Phase\n(Head Faces Player, Eyes Red, Play Audio)"]
-    Red -->|Motion Detected| Elim["Elimination!\n (Flash Eyes, Play Sound)"]
+    Red -->|Motion Detected| Elim["Elimination! \n(Flash Eyes, Play Sound)"]
     Red -->|No Motion, Timer| Green
-    Elim --> Reset["Reset State\n (Eyes Blue, Wait for Button)"]
+    Elim --> Reset["Reset State \n(Eyes Blue, Wait for Button)"]
     Reset -->|Button Press| Green
 ```
 
